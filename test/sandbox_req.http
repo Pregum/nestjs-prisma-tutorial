@@ -1,0 +1,27 @@
+POST http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+  "email": "test@example.com",
+  "name": "test user"
+}
+
+### 
+
+POST http://localhost:3000/post 
+content-type: application/json
+
+{
+  "title": "first article",
+  "content": "hogehoge content",
+  "authorEmail":  "test@example.com"
+}
+
+### 
+http://localhost:3000/feed
+
+###
+http://localhost:3000/post/3
+
+###
+PUT http://localhost:3000/publish/1
